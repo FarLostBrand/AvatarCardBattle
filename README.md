@@ -2,8 +2,6 @@
 This was created for my Web Dev 1 Final Project.  
 **This is a non-commercial creation.**
 
----
-
 # How to Play
 Each player chooses an avatar, with each avatar type having its own ability.  
 After both players choose an avatar, it's battle time.  
@@ -11,17 +9,13 @@ Both players will take turns picking a certain amount of cards from the deck.
 They will have the ability to draw and/or shuffle the deck if they please.  
 Players will be able to use their ability on their turn if the conditions are met.
 
----
-
 # Abilities
 
 ## Overview
-
 Abilities are things players can use during combat, but only once!  
 Be sure to choose your ability wisely!
 
 ## Ability Descriptions
-
 > ## Adventurer
 > The adventurer is a sneaky foe.  
 > They have the ability to swap decks with the opponent.
@@ -54,7 +48,10 @@ Be sure to choose your ability wisely!
 > Allllriggghty then. LEEETS SPINNN THAT WHEEL!  
 > Shuffles opponents deck.
 
----
+# APIs
+For this project I used 2 APIs.  
+[Deck of Cards](https://deckofcardsapi.com/)  
+[DiceBear](https://www.dicebear.com/)
 
 # Music
 The music is usable for NON-COMMERCIAL use.  
