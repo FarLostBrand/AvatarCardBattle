@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 255, 255, 0.7);
+    margin-bottom: 2rem;
+}
+
+#playerSection {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+#player1Display, #player2Display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    background-color: #1C1C1C;
+    border: 2px solid #6A6A6A;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#player1Display.active, #player2Display.active {
+    border-color: #2D85F3;
+    background-color: #333333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+#player1Name, #player2Name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFDD57;
+    margin-bottom: 1rem;
+}
+
+.avatarDisplay {
+    width: 150px;
+    height: 150px;
+    background-color: #333333;
+    border-radius: 50%;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+#playerDecks {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 1rem;
+}
+
+#playerDeck1, #playerDeck2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin-top: 1rem;
+}
+
+#playerDeck1Img, #playerDeck2Img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#player1NumberOfCards, #player2NumberOfCards {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFDD57;
+    margin-top: 0.5rem;
+}
+
+#buttonSection {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #191919;
+    background-color: #2D85F3;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #21C49F;
+}
+
+#endTurn {
+    margin-top: 1rem;
+}
+
+#errorTag {
+    font-size: 1.2rem;
+    color: #FF5C5C;
+    background-color: #FFDDDD;
+    padding: 1rem;
+    border: 1px solid #FF5C5C;
+    border-radius: 5px;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #playerSection {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #player1Display,
+    #player2Display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #playerDeck1,
+    #playerDeck2 {
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 0;
+        width: auto;
+        margin-left: 0.5rem;
+    }
+
+    #playerDeck1Img, #playerDeck2Img {
+        width: 120px;
+        height: auto;
+    }
+
+    #player1NumberOfCards, #player2NumberOfCards {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+    #playerDecks {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+}

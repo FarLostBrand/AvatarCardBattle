@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Selection</title>
+    <link rel="stylesheet" href="../styles/character-selection.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script type="module" defer src="../scripts/character-selection.js"></script>
+<body>
+    <h1>Avatar Selection</h1>
+    <div id="playerSection">
+        <div id="player1Display">
+            <p id="player1Name">Player 1</p>
+            <div id="player1Avatar" class="avatarDisplay"></div>
+        </div>
+        <div id="player2Display">
+            <p id="player2Name">Player 2</p>
+            <div id="player2Avatar" class="avatarDisplay"></div>
+        </div>
+    </div>
+
+    <div id="artStyle">
+        <button id="adventurer" class="artOption selected">Adventurer</button>
+        <button id="avataaars" class="artOption">Avataaars</button>
+        <button id="big-ears" class="artOption">Big Ears</button>
+        <button id="dylan" class="artOption">Dylan</button>
+        <button id="lorelei" class="artOption">Lorelei</button>
+        <button id="micah" class="artOption">Micah</button>
+        <button id="personas" class="artOption">Personas</button>
+        <button id="pixel-art" class="artOption">Pixel Art</button>
+    </div>
+
+    <div id="timeSliderContainer">
+        <label for="timeSlider">Number of Cards</label>
+        <input type="range" min="1" max="26" value="13" id="timeSlider">
+        <p id="currentDuration">13 cards</p>
+    </div>
+
+    <div id="buttonSection">
+        <button id="generateCharacterButton">Generate</button>
+        <button id="startButton">Battle</button>
+    </div>
+
+    <p id="errorTag"></p>
+
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="../audio/1.%20クリスマス都市%20(2024%20Version).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="errorSound" src="../audio/error.wav" preload="auto" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.getElementById('backgroundMusic').volume = 0.05; //it's so loud for no reason... also javascript way is just better than jquery
+        document.getElementById('errorSound').volume = 0.3;
+    </script>
+</body>
+</html>

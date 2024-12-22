@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 255, 255, 0.7);
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+
+#playerSection {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+}
+
+#player1Display, #player2Display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    border: 2px solid #6A6A6A;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #1C1C1C;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#player1Display.selected, #player2Display.selected {
+    border: 2px solid #2D85F3;
+    background-color: #333333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+#player1Name, #player2Name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #FFDD57;
+    margin-bottom: 1rem;
+}
+
+.avatarDisplay {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#player1Avatar img, #player2Avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#artStyle {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+    width: 50%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.artOption {
+    background-color: #2D85F3;
+    color: #191919;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-transform: capitalize;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.artOption:active {
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artOption:hover {
+    background-color: #21C49F;
+}
+
+.artOption.selected {
+    background-color: #21C49F;
+    color: #FFFFFF;
+    border: 2px solid #2D85F3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#timeSliderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#timeSliderContainer label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFDD57;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#currentDuration {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2D85F3;
+    margin-top: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#timeSlider {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #333;
+    border-radius: 5px;
+    height: 8px;
+}
+
+#timeSlider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2D85F3;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#timeSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2D85F3;
+    cursor: pointer;
+}
+
+#timeSlider:hover,
+#timeSlider:focus {
+    border-color: #2D85F3;
+}
+
+#currentDuration {
+    font-size: 1.2rem;
+    color: #FFDD57;
+    margin-top: 0.5rem;
+}
+
+#buttonSection {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    background-color: #2D85F3;
+    color: #191919;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #21C49F;
+}
+
+#errorTag {
+    font-size: 1.2rem;
+    color: #FF5C5C;
+    background-color: #FFDDDD;
+    padding: 1rem;
+    border: 1px solid #FF5C5C;
+    border-radius: 5px;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #playerSection {
+        flex-direction: column;
+    }
+
+    #player1Display, #player2Display {
+        width: 100%;
+    }
+
+    #artStyle {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

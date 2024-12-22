@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Supercell Battle Sim Login</title>
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script type="module" defer src="./scripts/login.js"></script>
+<body>
+    <button id="READMEButton">
+        README
+    </button>
+
+    <h1 id="title">
+        <span>Avatar</span>
+        <span>Card Battle</span>
+    </h1>
+    <form id="loginForm">
+        <div id="playerSection">
+            <div class="player">
+                <label for="player1Name">Player 1 Name</label>
+                <input id="player1Name" name="player1Name" type="text">
+            </div>
+
+            <div class="player">
+                <label for="player2Name">Player 2 Name</label>
+                <input id="player2Name" name="player2Name" type="text">
+            </div>
+        </div>
+
+        <input id="submitLogin" type="submit" value="Start Game">
+    </form>
+
+    <p id="errorTag"></p>
+
+    <!-- this is honestly so cool, it took forever to learn how to do this but its just so cool-->
+    <div id="readmeModal" class="modal">
+        <div div="modalContent">
+            <span class="closeButton">&times;</span>
+            <pre id="readmeContent"></pre>
+        </div>
+    </div>
+</body>
+</html>
