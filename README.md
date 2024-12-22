@@ -16,12 +16,10 @@ Players will be able to use their ability on their turn if the conditions are me
 # Abilities
 
 ## Overview
-
 Abilities are things players can use during combat, but only once!  
 Be sure to choose your ability wisely!
 
 ## Ability Descriptions
-
 > ## Adventurer
 > The adventurer is a sneaky foe.  
 > They have the ability to swap decks with the opponent.
@@ -53,6 +51,13 @@ Be sure to choose your ability wisely!
 > ## Pixel Art
 > Allllriggghty then. LEEETS SPINNN THAT WHEEL!  
 > Shuffles opponents deck.
+
+---
+
+# APIs
+For this project I used 2 APIs.  
+[Deck of Cards](https://deckofcardsapi.com/)  
+[DiceBear](https://www.dicebear.com/)
 
 ---
 
