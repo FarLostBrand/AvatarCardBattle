@@ -7,7 +7,11 @@ Each player chooses an avatar, with each avatar type having its own ability.
 After both players choose an avatar, it's battle time.  
 Both players will take turns picking a certain amount of cards from the deck.  
 They will have the ability to draw and/or shuffle the deck if they please.  
-Players will be able to use their ability on their turn if the conditions are met.
+Players will be able to use their ability on their turn if the conditions are met.  
+When all players have the max number of cards (the amount you decide), the game is over.  
+For every card you have greater than the opponents you get a point.  
+For example if my first card was 5 but yours was 4, then I would get a point.  
+The player with the most points wins.
 
 # Abilities
 
